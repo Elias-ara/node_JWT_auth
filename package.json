@@ -1,0 +1,19 @@
+{
+  "name": "node_jwt_auth",
+  "version": "1.0.0",
+  "description": "complete authentication system using JWT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elias-ara/node_JWT_auth.git"
+  },
+  "author": "Elias Araujo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elias-ara/node_JWT_auth/issues"
+  },
+  "homepage": "https://github.com/Elias-ara/node_JWT_auth#readme"
+}
