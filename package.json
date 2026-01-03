@@ -1,10 +1,14 @@
 {
+  "type": "module",
   "name": "node_jwt_auth",
   "version": "1.0.0",
   "description": "complete authentication system using JWT",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/Elias-ara/node_JWT_auth/issues"
   },
-  "homepage": "https://github.com/Elias-ara/node_JWT_auth#readme"
+  "homepage": "https://github.com/Elias-ara/node_JWT_auth#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "fastify": "^5.6.2",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
 }
