@@ -3,18 +3,18 @@
 
 GET {{baseUrl}}/ HTTP/1.1
 
-###REGISTER
+###
 
 POST {{baseUrl}}/users/register HTTP/1.1
 Content-Type: application/json
 
 {
     "email": "admin@g.com",
-    "name": "Admin",
+    "username": "Admin",
     "password": "admin123"
 }
 
-###login
+###
 
 # @name login
 POST {{baseUrl}}/users/login HTTP/1.1
@@ -25,7 +25,8 @@ Content-Type: application/json
     "password": "admin123"
 }
 
-#rota
+###
+
 @authToken = {{login.response.body.token}}
 GET {{baseUrl}}/protected HTTP/1.1
-Authorization: {{authToken}}
+Authorization: Bearer {{authToken}}
