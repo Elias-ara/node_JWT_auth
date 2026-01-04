@@ -28,5 +28,5 @@ Content-Type: application/json
 ###
 
 @authToken = {{login.response.body.token}}
-GET {{baseUrl}}/protected HTTP/1.1
+GET {{baseUrl}}/me HTTP/1.1
 Authorization: Bearer {{authToken}}
